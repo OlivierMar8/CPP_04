@@ -16,6 +16,7 @@ int	main( void )
 	Dog d;
 	const WrongAnimal* i = new WrongCat();
 	const WrongAnimal* k = new WrongCat();
+	const WrongCat* zz = new WrongCat();
 	a.makeSound();
 	b.makeSound();
 	std::cout << j->getType() << std::endl;
@@ -27,6 +28,8 @@ int	main( void )
 
 	std::cout << a << std::endl;
 	std::cout << *i << std::endl;
+
+	zz->makeSound();
 
 	delete meta;
 	delete i;
