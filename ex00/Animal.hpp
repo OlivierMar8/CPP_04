@@ -13,16 +13,16 @@ class Animal {
 		Animal( void );					//Canonique
 		Animal( std::string type );
 		Animal( Animal const & src );	//Canonique	
-		~Animal( void );				//Canonique	
+		virtual ~Animal( void );				//Canonique	
 
 		Animal &	operator=( Animal const & rhs );//Canonique
 
 		std::string		getType( void ) const;
 		void			setType( std::string type );
-		virtual void	makeSound( void ) const;
+		virtual void	makeSound( void );
 
 
-	private:
+	protected:
 
 		std::string	_type;
 

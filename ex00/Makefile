@@ -1,12 +1,12 @@
 #Makefile   CPP04   ex00
 
-SRCS		= main.cpp Animal.cpp
+SRCS		= main.cpp Animal.cpp Cat.cpp Dog.cpp
 
 OBJS		= $(SRCS:.cpp=.o)
 
 NAME		= animal
 
-CC			= c++ #c++-12
+CC			= c++-12 #c++-12
 
 RM			= rm -f
 
