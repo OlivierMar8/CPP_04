@@ -1,7 +1,7 @@
 //Dog.hpp CPP04   ex00
 
-#ifndef CAT_HPP
-# define CAT_HPP
+#ifndef DOG_HPP
+# define DOG_HPP
 
 #include <ostream>
 #include <string>
@@ -17,7 +17,7 @@ class Dog : public Animal {
 		~Dog( void );				//Canonique	
 
 
-		void	makeSound( void );
+		void	makeSound( void ) const;
 
 };
 

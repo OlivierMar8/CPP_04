@@ -17,7 +17,7 @@ class Cat : public Animal {
 		~Cat( void );				//Canonique	
 
 
-		void	makeSound( void );
+		void	makeSound( void ) const;
 
 };
 

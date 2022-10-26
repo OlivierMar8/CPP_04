@@ -11,6 +11,7 @@ int	main( void )
 	Animal	a;
 	const Animal* meta = new Animal;
 	const Animal* j = new Dog();
+	Dog d;
 	const Animal* i = new Cat();
 
 	a.makeSound();
