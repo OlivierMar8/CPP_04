@@ -26,8 +26,19 @@ std::string *	Brain::getIdeas( void ) {
 
 		return this->_ideas;
 }
+
+std::string		Brain::getAnIdea( int i )  const {
+
+	return this->_ideas[i];
+}
+
+void			Brain::setAnIdea( int i, std::string idea ) {
+
+	this->_ideas[i] = idea;
+}
+
 /*
-void	setIdeas( std::string * ideas ) {
+void	Brain::setIdeas( std::string * ideas ) {
 
 		_ideas = ideas;
 }

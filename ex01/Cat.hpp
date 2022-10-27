@@ -1,4 +1,4 @@
-//Cat.hpp CPP04   ex00
+//Cat.hpp CPP04   ex01
 
 #ifndef CAT_HPP
 # define CAT_HPP

@@ -1,4 +1,4 @@
-//Dog.hpp CPP04   ex00
+//Dog.hpp CPP04   ex01
 
 #ifndef DOG_HPP
 # define DOG_HPP
@@ -6,6 +6,7 @@
 #include <ostream>
 #include <string>
 #include "Animal.hpp"
+#include "Brain.hpp"
 
 class Dog : public Animal {
 
@@ -16,8 +17,11 @@ class Dog : public Animal {
 		Dog( Dog const & src );	//Canonique	
 		~Dog( void );				//Canonique	
 
-
 		void	makeSound( void ) const;
+
+	private:
+
+		Brain* _bPTR;
 
 };
 

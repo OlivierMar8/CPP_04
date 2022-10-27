@@ -11,32 +11,24 @@ int	main( void )
 {
 	std::string * Idee;
 	(void)Idee;
-	const Brain*  br = new Brain();
+	Brain*  br = new Brain();
+	br->setAnIdea(2, "Top");
 	Brain tr(*br);
+	std::cout << tr.getAnIdea(2) << std::endl;
 	Cat	c;
 	delete br;
+	std::cout << tr.getAnIdea(2) << std::endl;
 	Idee = tr.getIdeas();
-//	delete br;
-/*	Animal	a;
-	const Animal* meta = new Animal;
-	const Animal* j = new Dog();
-	Dog d;
-	const Animal* i = new Cat();
+	
+	const Animal * an = new Cat();
+	an->makeSound();
+	delete an;
 
-	a.makeSound();
-	std::cout << j->getType() << std::endl;
-	std::cout << i->getType() << std::endl;
-	i->makeSound();
-	j->makeSound();
-	meta->makeSound();
+	const Animal * ad = new Dog();
+	ad->makeSound();
+	delete ad;
 
-	std::cout << a << std::endl;
-	std::cout << *i << std::endl;
-
-	delete meta;
-	delete i;
-	delete j;
-*/
 	return 0;
+
 }
 
