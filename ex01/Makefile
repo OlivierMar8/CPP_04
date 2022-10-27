@@ -1,6 +1,6 @@
 #Makefile   CPP04   ex00
 
-SRCS		= main.cpp Animal.cpp Cat.cpp Dog.cpp
+SRCS		= main.cpp Animal.cpp Cat.cpp Dog.cpp Brain.cpp
 
 OBJS		= $(SRCS:.cpp=.o)
 

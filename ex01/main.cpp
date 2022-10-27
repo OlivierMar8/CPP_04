@@ -4,11 +4,20 @@
 #include "Animal.hpp"
 #include "Cat.hpp"
 #include "Dog.hpp"
+#include "Brain.hpp"
 
 
 int	main( void )
 {
-	Animal	a;
+	std::string * Idee;
+	(void)Idee;
+	const Brain*  br = new Brain();
+	Brain tr(*br);
+	Cat	c;
+	delete br;
+	Idee = tr.getIdeas();
+//	delete br;
+/*	Animal	a;
 	const Animal* meta = new Animal;
 	const Animal* j = new Dog();
 	Dog d;
@@ -27,7 +36,7 @@ int	main( void )
 	delete meta;
 	delete i;
 	delete j;
-
+*/
 	return 0;
 }
 

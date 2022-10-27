@@ -22,17 +22,24 @@ Brain::~Brain( void ) {
 		return;
 }
 
-int		Brain::getFoo( void) const {
+std::string *	Brain::getIdeas( void ) {
 
-		return this->_foo;
+		return this->_ideas;
 }
+/*
+void	setIdeas( std::string * ideas ) {
 
+		_ideas = ideas;
+}
+*/
 Brain &	Brain::operator=( Brain const & rhs) {
 
 		std::cout << "Brain Assignement operator called" << std::endl;
-
-		if ( this != &rhs )
-			this->_foo = rhs.getFoo();
+		if (this == &rhs)
+			return (*this);
+		for (int i = 0; i < 100;  i++ ) {
+			_ideas[i] = rhs._ideas[i];
+		}
 		return *this;
 }
 

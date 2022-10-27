@@ -1,7 +1,7 @@
 //Brain.hpp	CPP04	ex01
 
 #ifndef BRAIN_HPP
-# define BRAIN_CLASS_HPP
+# define BRAIN_HPP
 
 #include <ostream>
 #include <string>
@@ -16,7 +16,8 @@ class Brain {
 
 		Brain &	operator=( Brain const & rhs );//Canonique
 
-					getFoo( void ) const;
+		std::string *		getIdeas( void );
+//		void				setIdeas( std::string * ideas );
 
 		std::string 		_ideas[100];
 
