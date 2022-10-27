@@ -1,4 +1,4 @@
-//main.cpp	CPP04 ex00
+//main.cpp	CPP04 ex02
 
 #include <iostream>
 #include "Animal.hpp"
@@ -21,8 +21,7 @@ int	main( void )
 		std::cout << "- " << i << " - ";
 		tabAnim[i] = new Dog();
 	}
-	Animal anim;
-	anim.makeSound();
+	Animal Animal;
 	std::string * Idee;
 	(void)Idee;
 	Brain*  br = new Brain();
